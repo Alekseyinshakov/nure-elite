@@ -1,0 +1,213 @@
+@font-face {
+  font-family: Firasans;
+  font-display: swap;
+  src: url("../fonts/Firasansbold.woff2") format("woff2"), url("../fonts/Firasansbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Firasans;
+  font-display: swap;
+  src: url("../fonts/Firasanslight.woff2") format("woff2"), url("../fonts/Firasanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Firasans;
+  font-display: swap;
+  src: url("../fonts/Firasansmedium.woff2") format("woff2"), url("../fonts/Firasansmedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Firasans;
+  font-display: swap;
+  src: url("../fonts/Firasansregular.woff2") format("woff2"), url("../fonts/Firasansregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro_medium.woff2") format("woff2"), url("../fonts/gothampro_medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: gothampro;
+  font-display: swap;
+  src: url("../fonts/gothampro_bold.woff2") format("woff2"), url("../fonts/gothampro_bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url("../img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 790px;
+  gap: 18px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.menu__tel {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+.menu .phone-link {
+  margin-left: 70px;
+  position: relative;
+}
+.menu .phone-link::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 24px;
+  background-image: url("../img/phone.png");
+  background-repeat: no-repeat;
+  left: -30px;
+}
+
+.top {
+  height: 137px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  min-width: 143px;
+  margin-right: 15px;
+  display: inline-block;
+  height: 100%;
+}
+.logo img {
+  height: 100%;
+}
+
+body {
+  font-family: Firasans;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+a {
+  color: #fff;
+}

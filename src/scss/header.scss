@@ -1,0 +1,56 @@
+.header{
+   min-height: 100vh;
+   background-image: url('@img/header-bg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   
+}
+.menu{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   // flex-grow: 1;
+   flex-basis: 790px;
+   gap: 18px;
+   &__list{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+   }
+   &__tel{
+      display: flex;
+      justify-content: flex-end;
+      font-size: 20px;
+   }
+   .phone-link{
+      margin-left: 70px;
+      position: relative;
+      &::before{
+         position: absolute;
+         content: "";
+         width: 23px;
+         height: 24px;
+         background-image: url("@img/phone.png");
+         background-repeat: no-repeat;
+         left: -30px;
+      }
+   }
+}
+
+.top{
+   height: 137px;
+   display: flex;
+   justify-content: space-between;
+}
+.logo{
+   min-width: 143px;
+   margin-right: 15px;
+   display: inline-block;
+   height: 100%;
+   img{
+      height: 100%;
+   }
+}
+
