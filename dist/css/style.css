@@ -141,11 +141,83 @@ legend {
 }
 
 .header {
-  min-height: 100vh;
   background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: #fff;
+}
+.header__add-info li {
+  margin-bottom: 20px;
+}
+.header__add-info li span {
+  font-weight: 700;
+}
+.header__right {
+  max-width: 296px;
+  padding-top: 10px;
+}
+.header__info-more {
+  display: flex;
+  font-weight: 400;
+}
+.header__info-left {
+  font-size: 20px;
+  display: flex;
+  max-width: 200px;
+  gap: 15px;
+}
+.header__info-left span {
+  line-height: 0.8;
+  font-size: 128px;
+}
+.header__info-right {
+  gap: 15px;
+  max-width: 200px;
+  font-size: 20px;
+  display: flex;
+}
+.header__info-right span {
+  line-height: 0.8;
+  font-size: 128px;
+}
+.header__info-total {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header__btn {
+  display: inline-block;
+  background-color: #DBA069;
+  color: #333333 !important;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.header__title {
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.header__inner {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header__content-wrap {
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.header a {
+  color: #fff;
 }
 
 .menu {
@@ -160,6 +232,27 @@ legend {
   justify-content: space-between;
   gap: 20px;
   flex-wrap: wrap;
+}
+.menu__list a {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 7px;
+  padding-top: 7px;
+  transition: all 2s;
+}
+.menu__list a::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  background-color: #DBA069;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.menu__list a:hover::after {
+  opacity: 1;
 }
 .menu__tel {
   display: flex;
@@ -206,8 +299,4 @@ body {
   margin: 0 auto;
   padding-left: 9%;
   padding-right: 9%;
-}
-
-a {
-  color: #fff;
 }
